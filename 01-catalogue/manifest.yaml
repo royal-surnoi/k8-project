@@ -30,10 +30,10 @@ spec:
       containers:
       - name: catalogue 
         image: iamroyalreddy/catalogue:v1
-        imagePullPolicy: Always
+        imagePullPolicy: Always 
         envFrom:
-          - configMapRef:
-              name: catalogue
+        - configMapRef:
+            name: catalogue
 ---
 apiVersion: v1
 kind: Service
