@@ -1,22 +1,23 @@
 apiVersion: app/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
   name: mongodb
   namespace: roboshop
   labels:
     app: mongodb
-    tier: app
+    project: roboshop
+    tier: db
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: mongodb
-      tier: app
+      tier: db
   template:
     metadata:
       labels:
         app: mongodb
-        tier: app
+        tier: db
     spec: 
       containers:
       - name: mongodb
