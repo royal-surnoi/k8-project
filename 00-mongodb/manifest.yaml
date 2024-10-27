@@ -22,7 +22,7 @@ spec:
       containers:
       - name: mongodb
         image: iamroyalreddy/mongodb:v1
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent # IfNotPresent/Always 
 ---
 apiVersion: v1
 kind: Service
