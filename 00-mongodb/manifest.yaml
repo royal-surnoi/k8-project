@@ -12,11 +12,13 @@ spec:
   selector:
     matchLabels: # these labels are used to find the pods
       app: mongodb
+      project: roboshop
       tier: db
   template:
     metadata: # these labels are pod labels
       labels:
         app: mongodb
+        project: roboshop
         tier: db
     spec: 
       containers:
