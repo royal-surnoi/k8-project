@@ -42,7 +42,7 @@ spec:
     spec: 
       containers:
       - name: mysql
-        image: mysql
+        image: iamroyalreddy/mysql:v1
         imagePullPolicy: Always # IfNotPresent/Always/Never
         envFrom:
         - configMapRef:
